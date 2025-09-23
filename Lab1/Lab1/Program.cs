@@ -30,7 +30,7 @@ class Program
 
         // Generate HTML statement using the Statement class
         var htmlResult = Statement.RunHtml(invoice, plays);
-        Console.WriteLine("HTML:\n" + htmlResult);
+        Console.WriteLine("\nHTML:\n" + htmlResult);
 
         // Save HTML output to file for browser viewing
         File.WriteAllText("statement.html", htmlResult);
